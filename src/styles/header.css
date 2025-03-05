@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-a {
+header a {
   text-decoration: none;
   color: black;
   color: #2c3e50;
@@ -11,13 +11,13 @@ a {
   padding: 10px 15px;
 }
 
-a:hover {
+header a:hover {
   color: blue;
   text-decoration: underline;
 }
 
-ul,
-li {
+header ul,
+header ul li {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -36,11 +36,11 @@ header {
   z-index: 999;
 }
 
-li {
+header ul li {
   margin: 0 10px;
 }
 
-span {
+header span {
   letter-spacing: 2px;
   font-weight: bold;
   font-size: 1.5rem;
