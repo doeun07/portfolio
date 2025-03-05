@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding-top: 80px;
+  scroll-behavior: smooth;
+}
+
+.scroll {
+  height: calc(100vh - 80px);
+  overflow: auto;
+  scroll-snap-type: y mandatory;  /* 세로 방향으로 스크롤이 스냅되게 설정 */
+}
+
+section {
+  height: 100%;  /* 섹션 하나가 화면 전체를 차지하도록 설정 */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 100px;
+  scroll-snap-align: start;
+}
+
+h1 {
+  align-self: flex-start;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #2c3e50;
+  text-align: left;
+}

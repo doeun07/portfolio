@@ -1,0 +1,60 @@
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f0b03c;
+  position: relative;
+  display: inline-block;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.profile img {
+  width: 200px;
+  height: 300px;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 50px;
+}
+
+.profile-info {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 0 100px;
+}
+
+.profile-info h3 {
+  font-size: 35px;
+  color: #2c3e50;
+}
+.profile-info h3 span {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(79, 79, 79, 0.5);
+}
+
+.profile-contact p {
+  margin: 13px 0;
+  font-size: 18px;
+}
+
+.role {
+  background-color: #2c3e50;
+  padding: 5px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  margin: 10px 0;
+}
