@@ -1,6 +1,9 @@
 import React from "react";
 import "../styles/profile.css";
 import profileImage from "../img/profile.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Profile = () => {
   return (
@@ -14,10 +17,9 @@ const Profile = () => {
         </h3>
         <span className="role">Web FrontEnd Developer</span>
         <div className="profile-contact">
-          <p>📧 choidoeun0102@gmail.com</p>
-          <p>📞 010-9457-0058</p>
-          {/* <p>✏️ doeun0102.com</p> */}
-          <p>🌐 github.com/doeun</p>
+          <p><FontAwesomeIcon icon={faEnvelope} />choidoeun0102@gmail.com</p>
+          <p><FontAwesomeIcon icon={faPhone} />010-9457-0058</p>
+          <p><FontAwesomeIcon icon={faGithub} />github.com/doeun</p>
         </div>
       </div>
       </div>
