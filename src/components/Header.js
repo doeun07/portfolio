@@ -15,6 +15,9 @@ const Header = () => {
         <li>
           <a href="#projects" className="hover:text-gray-400">PROJECTS</a>
         </li>
+        <li>
+          <a href="#awards" className="hover:text-gray-400">AWARDS</a>
+        </li>
       </ul>
     </header>
   );
