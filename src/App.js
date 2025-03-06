@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Profile from "./sections/Profile";
 import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
@@ -11,6 +12,7 @@ function App() {
       <Profile />
       <Skills />
       <Projects />
+      <Footer />
     </div>
   );
 }
