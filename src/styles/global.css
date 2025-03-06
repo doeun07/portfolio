@@ -5,6 +5,11 @@
 
 body {
   padding-top: 80px;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 section {
