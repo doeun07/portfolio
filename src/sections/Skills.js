@@ -1,17 +1,30 @@
 import React from "react";
 import "../styles/skills.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faHtml5,
+  faCss3Alt,
+  faJs,
+  faReact,
+  faBootstrap,
+  faPhp,
+  faGitAlt,
+  faFigma,
+} from "@fortawesome/free-brands-svg-icons";
+import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 
 const skills = [
-  { name: "HTML", level: 90 },
-  { name: "CSS", level: 85 },
-  { name: "JavaScript", level: 60 },
-  { name: "React", level: 30 },
-  { name: "Bootstrap", level: 50 },
-  { name: "PHP", level: 50 },
-  { name: "MySQL", level: 50 },
-  { name: "Git", level: 40 },
-  { name: "GitHub", level: 70 },
-  { name: "Figma", level: 60 },
+  { name: "HTML", level: 90, iconLink: faHtml5 },
+  { name: "CSS", level: 85, iconLink: faCss3Alt },
+  { name: "JavaScript", level: 60, iconLink: faJs },
+  { name: "React", level: 30, iconLink: faReact },
+  { name: "Bootstrap", level: 50, iconLink: faBootstrap },
+  { name: "PHP", level: 50, iconLink: faPhp },
+  { name: "MySQL", level: 50, iconLink: faDatabase },
+  { name: "Git", level: 40, iconLink: faGitAlt },
+  { name: "GitHub", level: 70, iconLink: faGithub },
+  { name: "Figma", level: 60, iconLink: faFigma },
 ];
 
 const Skills = () => {
@@ -21,7 +34,9 @@ const Skills = () => {
       <div className="skills-content">
         {skills.map((skill, index) => (
           <div key={index} className="skill-bar">
-            <p className="skill-name">{skill.name}</p>
+            <p className="skill-name">
+              <FontAwesomeIcon icon={skill.iconLink} /> {skill.name}
+            </p>
             <div className="progress-bar">
               <div
                 className="progress-fill"
