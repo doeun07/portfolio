@@ -34,6 +34,7 @@ header {
   width: 100%;
   background-color: white;
   z-index: 999;
+  box-shadow: 0 0 10px 1px gray;
 }
 
 header ul li {
