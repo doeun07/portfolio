@@ -16,6 +16,8 @@ const projects = [
     endDate: "2024-03-01",
     technologies: ["React", "CSS", "JavaScript"],
     imageUrl: profileImage,
+    projectStatus: "완료",
+    projectType: "개인프로젝트",
     link: "#",
   },
   {
@@ -30,6 +32,8 @@ const projects = [
     endDate: "진행 중",
     technologies: ["HTML", "CSS", "JavaScript"],
     imageUrl: profileImage,
+    projectStatus: "완료",
+    projectType: "개인프로젝트",
     link: "#",
   },
   {
@@ -41,6 +45,8 @@ const projects = [
     endDate: "진행 중",
     technologies: ["React", "Node.js", "Express"],
     imageUrl: profileImage,
+    projectStatus: "완료",
+    projectType: "개인프로젝트",
     link: "#",
   },
   {
@@ -55,6 +61,8 @@ const projects = [
     endDate: "2024-05-01",
     technologies: ["Python", "Django"],
     imageUrl: profileImage,
+    projectStatus: "완료",
+    projectType: "개인프로젝트",
     link: "#",
   },
 ];
@@ -72,6 +80,7 @@ const Project = () => {
           <p className="project-title">{project.title}</p>
           <p className="project-summary">{project.summary}</p>
 
+          <h4>주요 기능 및 특징 :</h4>
           <ul className="project-description">
             {project.description.map((line, index) => (
               <li key={index}>{line}</li>
@@ -84,7 +93,7 @@ const Project = () => {
             {project.technologies.join(", ")}
           </p>
           <span className="project-link">
-            PROJECT LINK :{" "}
+            LINK :{" "}
             <a href={project.link} target="_blank" rel="noopener noreferrer">
               {project.link}
             </a>
