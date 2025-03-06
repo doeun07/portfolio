@@ -40,7 +40,6 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
-<<<<<<< HEAD
     ]
   },
   "devDependencies": {
@@ -48,9 +47,3 @@
   },
   "homepage": "https://doeun07.github.io/portfolio"
 }
-=======
-    ],
-    "homepage": "https://GitHub doeun07.github.io/portfolio"
-  }
-}
->>>>>>> 5d5acce71af91ec3f045e0aef12cd213e9a3cb7f
