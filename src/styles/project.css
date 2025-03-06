@@ -20,7 +20,7 @@
 }
 
 .project-card h4 {
-  font-weight: 400;
+  font-weight: 500;
   margin: 5px 0;
   color: rgb(58, 58, 58);
 }
@@ -33,11 +33,37 @@
   margin-bottom: 15px;
 }
 
+.project-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
 .project-title {
   color: #333333;
-  margin-bottom: 15px;
   font-size: 22px;
   font-weight: 700;
+}
+
+.project-status-end {
+  width: 60px;
+  padding: 5px 0;
+  background-color: #00C853;
+  border-radius: 10px;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+}
+
+.project-status-ing {
+  width: 60px;
+  padding: 5px 0;
+  background-color: #FBC02D ;
+  border-radius: 10px;
+  font-size: 15px;
+  color: white;
+  text-align: center;
 }
 
 .project-description {
@@ -54,7 +80,7 @@
 .project-summary {
   font-size: 16px;
   color: #444444;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   font-weight: 600;
 }
 
@@ -74,16 +100,18 @@
 }
 
 .project-link {
-  display: block;
   margin-top: 15px;
   font-size: 16px;
   color: #007bff;
   font-weight: bold;
+  display: flex;
+  align-items: center;
 }
 
 .project-link a {
   text-decoration: none;
   color: #007bff;
+  margin: 0 10px;
 }
 
 .project-link a:hover {
